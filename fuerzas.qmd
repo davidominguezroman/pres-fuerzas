@@ -1,5 +1,134 @@
 ---
-title: "Untitled"
-format: revealjs
+title: "Fuerzas"
+format: 
+  revealjs:
+    smaller: true
+    scrollable: true
+    theme: [default, style.scss]
+    logo: ./pictures/logo.png
+    footer: "David Domínguez Román - IES Valle del Oja"
+    transition: fade
+    touch: true
+    controls: true
+    controls-layout: edges
+    background-image: ./pictures/hero-background.svg
+    background-size: contain
+    background-opacity: 1
+    background-transition: fade
+    callout:
+      appearance: minimal
+      icon: false
+    font-size: 10
 ---
+    
+# ¿Qué es una fuerza?
+
+Una **fuerza** es toda causa que pueda deformar un objeto o modificar su estado de reposo o movimiento. La unidad de fuerza en el Sistema Internacional es el Newton (N).
+
+Los **efectos** de una fuerza son:
+
+-   Poder **mover un cuerpo** que estaba parado.
+-   Poder **parar un cuerpo** que se estaba moviendo.
+-   Poder **modificar la velocidad** de un objeto.
+-   Poder producir **deformaciones**.
+
+# Tipos
+
+Las fuerzas pueden actuar de distintas **formas**:
+
+-   **Por contacto**: por ejemplo, al empujar una silla o golpear un balón.
+
+-   **A distancia**: no es necesario que haya un contacto físico entre los cuerpos.
+
+    -   Gravitatoria.
+
+    -   Magnética.
+
+    -   Eléctrica.
+
+# Representación
+
+A la hora de **representar** las fuerzas, tenemos que entender que una fuerza no es solo un número: es un **vector**. Un vector es lo que se denomina \***un segmento orientado**, que se representa con una flecha. Está **determinado** por:
+
+-   **El módulo**: el módulo es el valor numérico, es decir, **lo que mide de largo**.
+
+-   **La dirección**: es la **la línea imaginaria sobre la que se dibuja**. Me indica **la inclinación** del vector.
+
+-   **El sentido**: se indica con **la punta de la flecha**.
+
+-   **Punto de aplicación**: es el **comienzo** del vector.
+
+# Fuerza resultante
+
+![](pictures/fuerzaResultante.svg){fig-align="center" width="40%"}
+
+Cuando tenemos varias fuerzas, podremos calcular la **fuerza resultante**. Esta fuerza la obtendremos sumando y restando fuerzas **que tengan la misma dirección**. Es posible calcular la fuerza resultante cuando tienen direcciones diferentes, pero es algo que haréis en cursos posteriores.
+
+# Fuerza resultante
+
+En el caso de la figura anterior, hay **tres fuerzas en una misma dirección**: dos fuerzas de 30N y una, **en sentido contrario**, de 80N. Si tomamos como positivo todo lo que va a la derecha y negativo lo que va a la izquierda, la fuerza resultante es 
+
+$$
+  F_{resultante} = 80 - 30 - 30 = 20 \text{N}.
+$$
+
+Esa fuerza resultante tendrá un módulo de 20N, dirección horizontal y sentido derecha.
+
+# Clasificación de los cuerpos
+
+Los **cuerpos** pueden **clasificarse** en:
+
+# 
+
++------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------+
+| -   **Rígidos**: **no se deforman** ante la acción de una fuerza. Por ejemplo: la pata de una silla.                                                 | ![](./pictures/D_NQ_NP_770113-MLA46490092791_062021-W.webp){width="28%"}        |
++------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------+
+| -   **Plásticos**: **se deforman** bajo la acción de una fuerza, pero **no vuelven a su estado natural** cuando deja de actuar. Por ejemplo, el pan. | ![](./pictures/Little_girl_holding_plasticine._(49810941302).webp){width="138"} |
++------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------+
+| -   **Elásticos**: son **capaces de recuperar su forma inicial** cuando una fuerza los ha deformado. Por ejemplo: una goma elástica.                 | ![](./pictures/goma-el-stica_PDT01256.webp){width="124"}                        |
++------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------+
+
+# Ley de Hooke {.smaller}
+
+Si cogemos un muelle cualquiera y suspendemos una masa de uno de sus extremos (la llamaremos peso), dejando el otro fijo, este se deforma y se alarga una cantidad $\Delta x$. Si suspendemos otra masa igual, el muelle se alargará el doble de lo que lo había hecho. El alargamiento de un muelle es directamente proporcional a la fuerza que se ha ejercido para alargarlo:
+
+$$
+F = K \cdot \Delta x,
+$$
+
+siendo
+
+$$
+\Delta x = x_{final} - x_{inicial}.
+$$
+
+A esta ecuación la llamamos ***Ley de Hooke*** y fue enunciada por ***Robert Hooke***.
+
+# Movimiento
+
+- **El sistema de referencia** es un **punto del espacio**, del cual diremos que **su posición es** $x=0$. 
+
+A partir de ese punto diremos hacia dónde consideramos que la posición es positiva. Por ejemplo, si digo que desde mi pecho hacia adelante es positivo, todo lo que esté delante de mí tendrá una posición positiva, y todo lo que esté detrás la tendrá negativa.
+
+- Definir el sistema de referencia es **LO PRIMERO QUE HAY QUE HACER** para definir un movimiento.
+
+# Movimiento
+
+Antes de hablar de movimiento, necesitamos aclarar dos conceptos fundamentales:
+
+-   **Móvil**: es un cuerpo que se mueve. Ambos términos se pueden utilizar.
+
+-   **Posición**: es el **punto** en el que se encuentra un móvil **en un momento determinado.** La posición inicial, $x_0$, y la posición final, $x_f$, marcan el principio y final de la trayectoria.
+
+-   **Trayectoria**: es el **camino** que recorre el móvil durante el movimiento.
+
+-   **Desplazamiento**: **longitud de la línea recta** que une las posiciones inicial y final.
+
+-   **Espacio recorrido**: se denomina con la letra $s$ y es la **longitud de la trayectoria.**
+
+:::{important}
+
+Un **movimiento** es el **cambio en la posición de un cuerpo a lo largo del tiempo**, respecto de un sistema de referencia.
+
+:::
 
