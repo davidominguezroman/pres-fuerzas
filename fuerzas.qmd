@@ -10,6 +10,7 @@ format:
     transition: fade
     touch: true
     controls: true
+    lang: es-ES
     controls-layout: edges
     background-image: ./pictures/hero-background.svg
     background-size: contain
@@ -19,8 +20,11 @@ format:
       appearance: minimal
       icon: false
     font-size: 10
+    execute: true
+    echo: false
+    output-file: main.html
 ---
-    
+
 # ¿Qué es una fuerza?
 
 Una **fuerza** es toda causa que pueda deformar un objeto o modificar su estado de reposo o movimiento. La unidad de fuerza en el Sistema Internacional es el Newton (N).
@@ -66,7 +70,7 @@ Cuando tenemos varias fuerzas, podremos calcular la **fuerza resultante**. Esta 
 
 # Fuerza resultante
 
-En el caso de la figura anterior, hay **tres fuerzas en una misma dirección**: dos fuerzas de 30N y una, **en sentido contrario**, de 80N. Si tomamos como positivo todo lo que va a la derecha y negativo lo que va a la izquierda, la fuerza resultante es 
+En el caso de la figura anterior, hay **tres fuerzas en una misma dirección**: dos fuerzas de 30N y una, **en sentido contrario**, de 80N. Si tomamos como positivo todo lo que va a la derecha y negativo lo que va a la izquierda, la fuerza resultante es
 
 $$
   F_{resultante} = 80 - 30 - 30 = 20 \text{N}.
@@ -88,6 +92,14 @@ Los **cuerpos** pueden **clasificarse** en:
 | -   **Elásticos**: son **capaces de recuperar su forma inicial** cuando una fuerza los ha deformado. Por ejemplo: una goma elástica.                 | ![](./pictures/goma-el-stica_PDT01256.webp){width="124"}                        |
 +------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------+
 
+# 
+
+<iframe src="https://phet.colorado.edu/sims/html/forces-and-motion-basics/latest/forces-and-motion-basics_en.html"
+        width="800"
+        height="600"
+        allowfullscreen>
+</iframe>
+
 # Ley de Hooke {.smaller}
 
 Si cogemos un muelle cualquiera y suspendemos una masa de uno de sus extremos (la llamaremos peso), dejando el otro fijo, este se deforma y se alarga una cantidad $\Delta x$. Si suspendemos otra masa igual, el muelle se alargará el doble de lo que lo había hecho. El alargamiento de un muelle es directamente proporcional a la fuerza que se ha ejercido para alargarlo:
@@ -104,13 +116,19 @@ $$
 
 A esta ecuación la llamamos ***Ley de Hooke*** y fue enunciada por ***Robert Hooke***.
 
+# 
+
+<iframe src="https://phet.colorado.edu/sims/html/masses-and-springs/latest/masses-and-springs_en.html" width="800" height="600" allowfullscreen>
+
+</iframe>
+
 # Movimiento
 
-- **El sistema de referencia** es un **punto del espacio**, del cual diremos que **su posición es** $x=0$. 
+-   **El sistema de referencia** es un **punto del espacio**, del cual diremos que **su posición es** $x=0$.
 
 A partir de ese punto diremos hacia dónde consideramos que la posición es positiva. Por ejemplo, si digo que desde mi pecho hacia adelante es positivo, todo lo que esté delante de mí tendrá una posición positiva, y todo lo que esté detrás la tendrá negativa.
 
-- Definir el sistema de referencia es **LO PRIMERO QUE HAY QUE HACER** para definir un movimiento.
+-   Definir el sistema de referencia es **LO PRIMERO QUE HAY QUE HACER** para definir un movimiento.
 
 # Movimiento
 
@@ -126,9 +144,256 @@ Antes de hablar de movimiento, necesitamos aclarar dos conceptos fundamentales:
 
 -   **Espacio recorrido**: se denomina con la letra $s$ y es la **longitud de la trayectoria.**
 
-:::{important}
-
 Un **movimiento** es el **cambio en la posición de un cuerpo a lo largo del tiempo**, respecto de un sistema de referencia.
 
-:::
+# 
 
+Vamos a distinguir 2 tipos de movimientos:
+
+-   **Movimiento rectilíneo uniforme (MRU)**: la **velocidad** se mantiene **constante** en todo el movimiento.
+
+-   **Movimiento rectilíneo uniformemente acelerado (MRUA)**: durante este movimiento la **velocidad cambia** debido a la **aparición de una aceleración.**
+
+Hemos hablado de velocidad y aceleración, pero... ¿qué son? ¿Cómo se definen?
+
+# Velocidad
+
+La **velocidad**, $v$, es el espacio recorrido por el móvil, $s$, dividido por el tiempo, $t$, que le ha llevado recorrerlo:
+
+$$
+v=\frac{s}{t}.
+$$
+
+Las **unidades de la velocidad**, en el **Sistema Internacional**, son los metros por segundo, $\text{m}/\text{s}$. Otras unidades utilizadas son los kilómetros por hora, $\text{km}/\text{h}$.
+
+# Aceleración
+
+Normalmente, un móvil no se desplaza a velocidad constante. Por ello, definimos **velocidad instantánea** como la velocidad que lleva en un **instante muy pequeño** de tiempo y **velocidad media** a el desplazamiento del móvil entre el tiempo empleado:
+
+$$
+v_{media} = \frac{x_{final} - x_{inicial}}{t} = \frac{x_f - x_0}{t} = \frac{x_f - x_i}{t}
+$$Cualquiera de las formas de escribirla es correcta. Hay que tener en cuenta que, como **los movimientos que vamos a estudiar siempre los vamos a tratar como si fueran en línea recta**, $s = x_f - x_i$. Si el movimiento no fuera en línea recta, esto no se podría hacer ([revisar la definición de trayectoria y desplazamiento]{.underline}).
+
+**Si** el móvil **no cambia su velocidad**, **ambas velocidades**, la media y la instantánea **serán iguales.**
+
+La **aceleración**, $a$, es el cambio de velocidad de un móvil en un tiempo determinado:
+
+$$
+a=\frac{v_{final} - v_{inicial}}{t} = \frac{v_f - v_0}{t} = \frac{v_f - v_i}{t}.
+$$
+
+Cualquiera de las formas de indicar las dos velocidades será correcta. Las **unidades de la aceleración** en el **Sistema Internacional** son los metros por segundo al cuadrado, $\text{m}/\text{s}²$.
+
+# Representación en gráficas
+
+En física **es fundamental** poder representar movimientos, posiciones, variaciones, etc., para poder entender cómo funciona todo. Primero, vamos a hablar sobre tablas. **Las tablas me permiten ordenar los parámetros que yo controlo** y escribir las medidas que realizo después. Por ejemplo, si cada segundo quiero medir la posición de un objeto, escribo primero el tiempo que aparece en el cronómetro y luego apunto la posición del objeto:
+
+|         |     |     |     |     |     |
+|:-------:|:---:|:---:|:---:|:---:|:---:|
+| **t/s** |  0  |  1  |  2  |  3  |  4  |
+| **s/m** | 10  | 18  | 26  | 34  | 42  |
+
+Es **importante que aquello que vayamos a poner en el eje horizontal sea lo primero de la tabla**. Al dibujar la gráfica quedaría así:
+
+# 
+
+```{r}
+# Crear un dataframe con los valores de tiempo y posición
+datos <- data.frame(t = c(0, 1, 2, 3, 4), s = c(10, 18, 26, 34, 42))
+
+# Graficar la posición en función del tiempo
+plot(datos$t, datos$s, type = "o", 
+     xlab = "t/s", ylab = "s/m", 
+     main = "Posición en función del tiempo",
+     col = "blue", pch = 16, lwd = 2)
+
+# Agregar cuadrícula al gráfico
+grid()
+
+# Mostrar la gráfica
+
+```
+
+# Gráficas posición-tiempo
+
+A la hora de interpretar gráficas en las que se represente la posición de un cuerpo en función del tiempo (gráficas posición tiempo o gráficas s-t), tenemos que fijarlos en **dos cosas fundamentales**:
+
+-   ¿Es una línea? Si la respuesta es sí, entonces estamos ante un MRU.
+-   ¿La pendiente es positiva, negativa o cero? Si la pendiente es positiva, la posición aumentará con el tiempo, y si es negativa disminuirá. Si la pendiente es cero, el cuerpo siempre estará en la misma posición, así que su velocidad será cero.
+
+```{python}
+import matplotlib.pyplot as plt
+
+# Definir los datos de tiempo y posición para cada velocidad
+tiempo = [0, 1, 2, 3]
+posicion_positiva = [1, 2, 3, 4]  # Velocidad constante positiva
+posicion_negativa = [4, 3, 2, 1]  # Velocidad constante negativa
+posicion_cero = [2, 2, 2, 2]      # Velocidad igual a cero
+
+# Crear una figura con tres subgráficos
+fig, axs = plt.subplots(1, 3, figsize=(12, 4))
+
+# Graficar la posición en función del tiempo para la velocidad constante positiva
+axs[0].plot(tiempo, posicion_positiva, 'bo-', linewidth=2)
+axs[0].set_title('Velocidad positiva')
+axs[0].set_xlabel('t/s')
+axs[0].set_ylabel('s/m')
+#axs[0].set_xlim([0, 4])
+#axs[0].set_ylim([0, 4])
+axs[0].tick_params(axis='both', which='both', bottom=False, top=False, left=False, right=False)
+
+# Graficar la posición en función del tiempo para la velocidad constante negativa
+axs[1].plot(tiempo, posicion_negativa, 'ro-', linewidth=2)
+axs[1].set_title('Velocidad negativa')
+axs[1].set_xlabel('t/s')
+axs[1].set_ylabel('s/m')
+#axs[1].set_xlim([0, 4])
+#axs[1].set_ylim([0, 4])
+axs[1].tick_params(axis='both', which='both', bottom=False, top=False, left=False, right=False)
+
+# Graficar la posición en función del tiempo para la velocidad igual a cero
+axs[2].plot(tiempo, posicion_cero, 'go-', linewidth=2)
+axs[2].set_title('Velocidad cero')
+axs[2].set_xlabel('t/s')
+axs[2].set_ylabel('s/m')
+#axs[2].set_xlim([0, 4])
+#axs[2].set_ylim([0, 4])
+axs[2].tick_params(axis='both', which='both', bottom=False, top=False, left=False, right=False)
+
+# Ajustar el espaciado entre los subgráficos
+plt.tight_layout()
+
+# Mostrar la figura
+plt.show()
+
+```
+
+Los **casos** en los que las representaciones **no sean líneas rectas no los vamos a ver**.
+
+# Gráficas velocidad-tiempo
+
+Con las gráficas velocidad-tiempo (v-t) tenemos una situación parecida. Tenemos que fijarnos en dos cosas:
+
+-   ¿Es una línea recta? Si lo es, entonces estamos en un MRU o un MRUA. No veremos ningún caso en el que no sean rectas, pero existen.
+
+-   ¿La pendiente es positiva, negativa o cero? Si la **pendiente es positiva**, el móvil cada vez tendrá una **velocidad más alta** y **si es negativa**, cada vez tendrá una **velocidad más baja**. **En los dos casos** estaremos ante un **MRUA**. Si la **pendiente es cero**, la velocidad no cambia y estaremos ante un **MRU**.
+
+```{python}
+import matplotlib.pyplot as plt
+
+# Definir los datos de tiempo y posición para cada velocidad
+tiempo = [0, 1, 2, 3]
+posicion_positiva = [1, 2, 3, 4]  # Velocidad constante positiva
+posicion_negativa = [4, 3, 2, 1]  # Velocidad constante negativa
+posicion_cero = [2, 2, 2, 2]      # Velocidad igual a cero
+
+# Crear una figura con tres subgráficos
+fig, axs = plt.subplots(1, 3, figsize=(12, 4))
+
+# Graficar la posición en función del tiempo para la velocidad constante positiva
+axs[0].plot(tiempo, posicion_positiva, 'bo-', linewidth=2)
+axs[0].set_title('MRUA con a>0')
+axs[0].set_xlabel('t (s)')
+axs[0].set_ylabel('v (m/s)')
+#axs[0].set_xlim([0, 4])
+#axs[0].set_ylim([0, 4])
+axs[0].tick_params(axis='both', which='both', bottom=False, top=False, left=False, right=False)
+
+# Graficar la posición en función del tiempo para la velocidad constante negativa
+axs[1].plot(tiempo, posicion_negativa, 'ro-', linewidth=2)
+axs[1].set_title('MRUA con a<0')
+axs[1].set_xlabel('t (s)')
+axs[1].set_ylabel('v (m/s)')
+#axs[1].set_xlim([0, 4])
+#axs[1].set_ylim([0, 4])
+axs[1].tick_params(axis='both', which='both', bottom=False, top=False, left=False, right=False)
+
+# Graficar la posición en función del tiempo para la velocidad igual a cero
+axs[2].plot(tiempo, posicion_cero, 'go-', linewidth=2)
+axs[2].set_title('MRU')
+axs[2].set_xlabel('t (s)')
+axs[2].set_ylabel('v (m/s)')
+#axs[2].set_xlim([0, 4])
+#axs[2].set_ylim([0, 4])
+axs[2].tick_params(axis='both', which='both', bottom=False, top=False, left=False, right=False)
+
+# Ajustar el espaciado entre los subgráficos
+plt.tight_layout()
+
+# Mostrar la figura
+plt.show()
+
+```
+
+# 
+
+<iframe src="https://phet.colorado.edu/sims/cheerpj/moving-man/latest/moving-man.html?simulation=moving-man"
+        width="800"
+        height="600"
+        allowfullscreen>
+</iframe>
+
+# Palancas
+
+Aunque las palancas las dais en Tecnología, vamos a hacer un breve recordatorio.
+
+Una **palanca** es una barra rígida que gira alrededor de un punto de apoyo llamado **fulcro**. En las palancas siempre se cumple que:
+
+$$
+F_P\cdot b_P = F_R\cdot b_R,
+$$
+
+Siendo:
+
+-   $F_P$: fuerza potencia (la que se realiza para levantar el peso)
+-   $F_R$: fuerza resistencia (la que ejerce la masa que se quiere levantar)
+-   $b_P$: brazo potencia (distancia desde donde se aplica la fuerza motor al fulcro)
+-   $b_R$: brazo resistencia (distancia desde la masa que se quiere levantar al fulcro)
+
+# Tipos
+
+Tenemos tres tipos de palancas:
+
++-----------------------------------------------------------------------+-----------------------------------------------+
+| **Primer género**: el fulcro está entre la potencia y la resistencia  | ![](pictures/palancagrado1.jpg){width="148"}  |
++-----------------------------------------------------------------------+-----------------------------------------------+
+| **Segundo género**: la resistencia está entre la potencia y el fulcro | ![](pictures/palancagrado2.jpeg){width="263"} |
++-----------------------------------------------------------------------+-----------------------------------------------+
+| **Tercer género**: la potencia está entre el fulcro y la resistencia  | ![](pictures/palancagrado3.jpeg){width="251"} |
++-----------------------------------------------------------------------+-----------------------------------------------+
+
+# Fuerza de rozamiento
+
+Probablemente nunca te hayas parado a pensar por qué, dependiendo de por dónde se camine, es más fácil resbalarse. Esto se debe a la **fuerza de rozamiento**. Si observamos cualquier superficie o cualquier objeto bajo el microscopio, veremos que **todo tiene una cierta rugosidad**. Estas rugosidades **se enganchan unas con otras**, haciendo que sea **más difícil mover un objeto**. La **fuerza de rozamiento** es una fuerza que ejercen los materiales sobre los cuerpos y que **SIEMPRE se opone al movimiento**. Esta fuerza depende de **dos factores**:
+
+-   **La rugosidad**: un suelo de cemento es más rugoso que el hielo, y por eso es más difícil arrastrar algo por el cemento que por el hielo. Así que, **a más rugosidad más rozamiento**.
+
+-   **El peso**: cuanto **mayor sea el peso que se apoya, mayor será el rozamiento**.
+
+# 
+
+<iframe src="https://phet.colorado.edu/sims/cheerpj/forces-1d/latest/forces-1d.html?simulation=forces-1d"
+        width="800"
+        height="600"
+        allowfullscreen>
+</iframe>
+
+# Leyes de Newton
+
+Ya hemos visto algún la definición de fuerza y hemos visto los diferentes movimientos básicos de un cuerpo, pero... ¿qué leyes físicas gobiernan sobre esto? ***Isaac Newton*** enunció sus tres leyes para explicar cómo se mueven los cuerpos:
+
+-   **Primera ley** (principio de inercia): todo cuerpo **permanece en reposo o en movimiento rectilíneo uniforme** mientras **no actúe ninguna fuerza sobre él**.
+
+-   **Segunda ley** (principio fundamental): la **aceleración** de un cuerpo es **directamente proporcional a la fuerza** que actúa sobre él **e inversamente proporcional a su masa**.
+
+$$
+F=m\cdot a
+$$
+
+-   **Tercera ley** (principio de acción y reacción): si un **cuerpo ejerce una fuerza** sobre otro, este ejerce una **fuerza igual, pero de sentido contrario**, sobre el primero.
+
+A partir de la segunda ley, podemos calcular el peso de cualquier masa. El **peso, P,** es la **fuerza** con la que un planeta **atrae a una masa**. Esta fuerza produce una aceleración, que llamaremos $g$, quedando la ecuación:
+
+$$
+P=m\cdot g
+$$

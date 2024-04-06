@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+<html lang="es-ES"><head>
 <script src="fuerzas_files/libs/clipboard/clipboard.min.js"></script>
 <script src="fuerzas_files/libs/quarto-html/tabby.min.js"></script>
 <script src="fuerzas_files/libs/quarto-html/popper.min.js"></script>
@@ -419,6 +419,12 @@
 </table>
 </section>
 
+<section id="section-1" class="title-slide slide level1 center">
+<h1></h1>
+<iframe src="https://phet.colorado.edu/sims/html/forces-and-motion-basics/latest/forces-and-motion-basics_en.html" width="800" height="600" allowfullscreen="">
+</iframe>
+</section>
+
 <section id="ley-de-hooke" class="title-slide slide level1 smaller center">
 <h1>Ley de Hooke</h1>
 <p>Si cogemos un muelle cualquiera y suspendemos una masa de uno de sus extremos (la llamaremos peso), dejando el otro fijo, este se deforma y se alarga una cantidad <span class="math inline">\(\Delta x\)</span>. Si suspendemos otra masa igual, el muelle se alargará el doble de lo que lo había hecho. El alargamiento de un muelle es directamente proporcional a la fuerza que se ha ejercido para alargarlo:</p>
@@ -430,6 +436,12 @@ F = K \cdot \Delta x,
 \Delta x = x_{final} - x_{inicial}.
 \]</span></p>
 <p>A esta ecuación la llamamos <strong><em>Ley de Hooke</em></strong> y fue enunciada por <strong><em>Robert Hooke</em></strong>.</p>
+</section>
+
+<section id="section-2" class="title-slide slide level1 center">
+<h1></h1>
+<iframe src="https://phet.colorado.edu/sims/html/masses-and-springs/latest/masses-and-springs_en.html" width="800" height="600" allowfullscreen="">
+</iframe>
 </section>
 
 <section id="movimiento" class="title-slide slide level1 center">
@@ -453,9 +465,173 @@ F = K \cdot \Delta x,
 <li><p><strong>Desplazamiento</strong>: <strong>longitud de la línea recta</strong> que une las posiciones inicial y final.</p></li>
 <li><p><strong>Espacio recorrido</strong>: se denomina con la letra <span class="math inline">\(s\)</span> y es la <strong>longitud de la trayectoria.</strong></p></li>
 </ul>
-<div class="{important}">
 <p>Un <strong>movimiento</strong> es el <strong>cambio en la posición de un cuerpo a lo largo del tiempo</strong>, respecto de un sistema de referencia.</p>
-</div>
+</section>
+
+<section id="section-3" class="title-slide slide level1 center">
+<h1></h1>
+<p>Vamos a distinguir 2 tipos de movimientos:</p>
+<ul>
+<li><p><strong>Movimiento rectilíneo uniforme (MRU)</strong>: la <strong>velocidad</strong> se mantiene <strong>constante</strong> en todo el movimiento.</p></li>
+<li><p><strong>Movimiento rectilíneo uniformemente acelerado (MRUA)</strong>: durante este movimiento la <strong>velocidad cambia</strong> debido a la <strong>aparición de una aceleración.</strong></p></li>
+</ul>
+<p>Hemos hablado de velocidad y aceleración, pero… ¿qué son? ¿Cómo se definen?</p>
+</section>
+
+<section id="velocidad" class="title-slide slide level1 center">
+<h1>Velocidad</h1>
+<p>La <strong>velocidad</strong>, <span class="math inline">\(v\)</span>, es el espacio recorrido por el móvil, <span class="math inline">\(s\)</span>, dividido por el tiempo, <span class="math inline">\(t\)</span>, que le ha llevado recorrerlo:</p>
+<p><span class="math display">\[
+v=\frac{s}{t}.
+\]</span></p>
+<p>Las <strong>unidades de la velocidad</strong>, en el <strong>Sistema Internacional</strong>, son los metros por segundo, <span class="math inline">\(\text{m}/\text{s}\)</span>. Otras unidades utilizadas son los kilómetros por hora, <span class="math inline">\(\text{km}/\text{h}\)</span>.</p>
+</section>
+
+<section id="aceleración" class="title-slide slide level1 center">
+<h1>Aceleración</h1>
+<p>Normalmente, un móvil no se desplaza a velocidad constante. Por ello, definimos <strong>velocidad instantánea</strong> como la velocidad que lleva en un <strong>instante muy pequeño</strong> de tiempo y <strong>velocidad media</strong> a el desplazamiento del móvil entre el tiempo empleado:</p>
+<p><span class="math display">\[
+v_{media} = \frac{x_{final} - x_{inicial}}{t} = \frac{x_f - x_0}{t} = \frac{x_f - x_i}{t}
+\]</span>Cualquiera de las formas de escribirla es correcta. Hay que tener en cuenta que, como <strong>los movimientos que vamos a estudiar siempre los vamos a tratar como si fueran en línea recta</strong>, <span class="math inline">\(s = x_f - x_i\)</span>. Si el movimiento no fuera en línea recta, esto no se podría hacer (<u>revisar la definición de trayectoria y desplazamiento</u>).</p>
+<p><strong>Si</strong> el móvil <strong>no cambia su velocidad</strong>, <strong>ambas velocidades</strong>, la media y la instantánea <strong>serán iguales.</strong></p>
+<p>La <strong>aceleración</strong>, <span class="math inline">\(a\)</span>, es el cambio de velocidad de un móvil en un tiempo determinado:</p>
+<p><span class="math display">\[
+a=\frac{v_{final} - v_{inicial}}{t} = \frac{v_f - v_0}{t} = \frac{v_f - v_i}{t}.
+\]</span></p>
+<p>Cualquiera de las formas de indicar las dos velocidades será correcta. Las <strong>unidades de la aceleración</strong> en el <strong>Sistema Internacional</strong> son los metros por segundo al cuadrado, <span class="math inline">\(\text{m}/\text{s}²\)</span>.</p>
+</section>
+
+<section id="representación-en-gráficas" class="title-slide slide level1 center">
+<h1>Representación en gráficas</h1>
+<p>En física <strong>es fundamental</strong> poder representar movimientos, posiciones, variaciones, etc., para poder entender cómo funciona todo. Primero, vamos a hablar sobre tablas. <strong>Las tablas me permiten ordenar los parámetros que yo controlo</strong> y escribir las medidas que realizo después. Por ejemplo, si cada segundo quiero medir la posición de un objeto, escribo primero el tiempo que aparece en el cronómetro y luego apunto la posición del objeto:</p>
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><strong>t/s</strong></td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">4</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>s/m</strong></td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">18</td>
+<td style="text-align: center;">26</td>
+<td style="text-align: center;">34</td>
+<td style="text-align: center;">42</td>
+</tr>
+</tbody>
+</table>
+<p>Es <strong>importante que aquello que vayamos a poner en el eje horizontal sea lo primero de la tabla</strong>. Al dibujar la gráfica quedaría así:</p>
+</section>
+
+<section id="section-4" class="title-slide slide level1 center">
+<h1></h1>
+
+<img data-src="fuerzas_files/figure-revealjs/unnamed-chunk-1-1.png" width="960" class="r-stretch"></section>
+
+<section id="gráficas-posición-tiempo" class="title-slide slide level1 center">
+<h1>Gráficas posición-tiempo</h1>
+<p>A la hora de interpretar gráficas en las que se represente la posición de un cuerpo en función del tiempo (gráficas posición tiempo o gráficas s-t), tenemos que fijarlos en <strong>dos cosas fundamentales</strong>:</p>
+<ul>
+<li>¿Es una línea? Si la respuesta es sí, entonces estamos ante un MRU.</li>
+<li>¿La pendiente es positiva, negativa o cero? Si la pendiente es positiva, la posición aumentará con el tiempo, y si es negativa disminuirá. Si la pendiente es cero, el cuerpo siempre estará en la misma posición, así que su velocidad será cero.</li>
+</ul>
+
+<img data-src="fuerzas_files/figure-revealjs/unnamed-chunk-2-1.png" width="1152" class="r-stretch"><p>Los <strong>casos</strong> en los que las representaciones <strong>no sean líneas rectas no los vamos a ver</strong>.</p>
+</section>
+
+<section id="gráficas-velocidad-tiempo" class="title-slide slide level1 center">
+<h1>Gráficas velocidad-tiempo</h1>
+<p>Con las gráficas velocidad-tiempo (v-t) tenemos una situación parecida. Tenemos que fijarnos en dos cosas:</p>
+<ul>
+<li><p>¿Es una línea recta? Si lo es, entonces estamos en un MRU o un MRUA. No veremos ningún caso en el que no sean rectas, pero existen.</p></li>
+<li><p>¿La pendiente es positiva, negativa o cero? Si la <strong>pendiente es positiva</strong>, el móvil cada vez tendrá una <strong>velocidad más alta</strong> y <strong>si es negativa</strong>, cada vez tendrá una <strong>velocidad más baja</strong>. <strong>En los dos casos</strong> estaremos ante un <strong>MRUA</strong>. Si la <strong>pendiente es cero</strong>, la velocidad no cambia y estaremos ante un <strong>MRU</strong>.</p></li>
+</ul>
+
+<img data-src="fuerzas_files/figure-revealjs/unnamed-chunk-3-3.png" width="1152" class="r-stretch"></section>
+
+<section id="section-5" class="title-slide slide level1 center">
+<h1></h1>
+<iframe src="https://phet.colorado.edu/sims/cheerpj/moving-man/latest/moving-man.html?simulation=moving-man" width="800" height="600" allowfullscreen="">
+</iframe>
+</section>
+
+<section id="palancas" class="title-slide slide level1 center">
+<h1>Palancas</h1>
+<p>Aunque las palancas las dais en Tecnología, vamos a hacer un breve recordatorio.</p>
+<p>Una <strong>palanca</strong> es una barra rígida que gira alrededor de un punto de apoyo llamado <strong>fulcro</strong>. En las palancas siempre se cumple que:</p>
+<p><span class="math display">\[
+F_P\cdot b_P = F_R\cdot b_R,
+\]</span></p>
+<p>Siendo:</p>
+<ul>
+<li><span class="math inline">\(F_P\)</span>: fuerza potencia (la que se realiza para levantar el peso)</li>
+<li><span class="math inline">\(F_R\)</span>: fuerza resistencia (la que ejerce la masa que se quiere levantar)</li>
+<li><span class="math inline">\(b_P\)</span>: brazo potencia (distancia desde donde se aplica la fuerza motor al fulcro)</li>
+<li><span class="math inline">\(b_R\)</span>: brazo resistencia (distancia desde la masa que se quiere levantar al fulcro)</li>
+</ul>
+</section>
+
+<section id="tipos-1" class="title-slide slide level1 center">
+<h1>Tipos</h1>
+<p>Tenemos tres tipos de palancas:</p>
+<table>
+<colgroup>
+<col style="width: 60%">
+<col style="width: 40%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>Primer género</strong>: el fulcro está entre la potencia y la resistencia</td>
+<td><img data-src="pictures/palancagrado1.jpg" width="148"></td>
+</tr>
+<tr class="even">
+<td><strong>Segundo género</strong>: la resistencia está entre la potencia y el fulcro</td>
+<td><img data-src="pictures/palancagrado2.jpeg" width="263"></td>
+</tr>
+<tr class="odd">
+<td><strong>Tercer género</strong>: la potencia está entre el fulcro y la resistencia</td>
+<td><img data-src="pictures/palancagrado3.jpeg" width="251"></td>
+</tr>
+</tbody>
+</table>
+</section>
+
+<section id="fuerza-de-rozamiento" class="title-slide slide level1 center">
+<h1>Fuerza de rozamiento</h1>
+<p>Probablemente nunca te hayas parado a pensar por qué, dependiendo de por dónde se camine, es más fácil resbalarse. Esto se debe a la <strong>fuerza de rozamiento</strong>. Si observamos cualquier superficie o cualquier objeto bajo el microscopio, veremos que <strong>todo tiene una cierta rugosidad</strong>. Estas rugosidades <strong>se enganchan unas con otras</strong>, haciendo que sea <strong>más difícil mover un objeto</strong>. La <strong>fuerza de rozamiento</strong> es una fuerza que ejercen los materiales sobre los cuerpos y que <strong>SIEMPRE se opone al movimiento</strong>. Esta fuerza depende de <strong>dos factores</strong>:</p>
+<ul>
+<li><p><strong>La rugosidad</strong>: un suelo de cemento es más rugoso que el hielo, y por eso es más difícil arrastrar algo por el cemento que por el hielo. Así que, <strong>a más rugosidad más rozamiento</strong>.</p></li>
+<li><p><strong>El peso</strong>: cuanto <strong>mayor sea el peso que se apoya, mayor será el rozamiento</strong>.</p></li>
+</ul>
+</section>
+
+<section id="section-6" class="title-slide slide level1 center">
+<h1></h1>
+<iframe src="https://phet.colorado.edu/sims/cheerpj/forces-1d/latest/forces-1d.html?simulation=forces-1d" width="800" height="600" allowfullscreen="">
+</iframe>
+</section>
+
+<section id="leyes-de-newton" class="title-slide slide level1 center">
+<h1>Leyes de Newton</h1>
+<p>Ya hemos visto algún la definición de fuerza y hemos visto los diferentes movimientos básicos de un cuerpo, pero… ¿qué leyes físicas gobiernan sobre esto? <strong><em>Isaac Newton</em></strong> enunció sus tres leyes para explicar cómo se mueven los cuerpos:</p>
+<ul>
+<li><p><strong>Primera ley</strong> (principio de inercia): todo cuerpo <strong>permanece en reposo o en movimiento rectilíneo uniforme</strong> mientras <strong>no actúe ninguna fuerza sobre él</strong>.</p></li>
+<li><p><strong>Segunda ley</strong> (principio fundamental): la <strong>aceleración</strong> de un cuerpo es <strong>directamente proporcional a la fuerza</strong> que actúa sobre él <strong>e inversamente proporcional a su masa</strong>.</p></li>
+</ul>
+<p><span class="math display">\[
+F=m\cdot a
+\]</span></p>
+<ul>
+<li><strong>Tercera ley</strong> (principio de acción y reacción): si un <strong>cuerpo ejerce una fuerza</strong> sobre otro, este ejerce una <strong>fuerza igual, pero de sentido contrario</strong>, sobre el primero.</li>
+</ul>
+<p>A partir de la segunda ley, podemos calcular el peso de cualquier masa. El <strong>peso, P,</strong> es la <strong>fuerza</strong> con la que un planeta <strong>atrae a una masa</strong>. Esta fuerza produce una aceleración, que llamaremos <span class="math inline">\(g\)</span>, quedando la ecuación:</p>
+<p><span class="math display">\[
+P=m\cdot g
+\]</span></p>
 <div class="quarto-auto-generated-content">
 <p><img src="./pictures/logo.png" class="slide-logo"></p>
 <div class="footer footer-default">
@@ -676,6 +852,44 @@ F = K \cdot \Delta x,
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {
@@ -716,12 +930,12 @@ F = K \cdot \Delta x,
         // flash "checked"
         button.classList.add('code-copy-button-checked');
         var currentTitle = button.getAttribute("title");
-        button.setAttribute("title", "Copied!");
+        button.setAttribute("title", "Copiado");
         let tooltip;
         if (window.bootstrap) {
           button.setAttribute("data-bs-toggle", "tooltip");
           button.setAttribute("data-bs-placement", "left");
-          button.setAttribute("data-bs-title", "Copied!");
+          button.setAttribute("data-bs-title", "Copiado");
           tooltip = new bootstrap.Tooltip(button, 
             { trigger: "manual", 
               customClass: "code-copy-button-tooltip",
