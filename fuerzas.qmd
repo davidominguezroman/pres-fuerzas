@@ -52,7 +52,7 @@ Las fuerzas pueden actuar de distintas **formas**:
 
 # Representación
 
-A la hora de **representar** las fuerzas, tenemos que entender que una fuerza no es solo un número: es un **vector**. Un vector es lo que se denomina \***un segmento orientado**, que se representa con una flecha. Está **determinado** por:
+A la hora de **representar** las fuerzas, tenemos que entender que una fuerza no es solo un número: es un **vector**. Un vector es lo que se denomina **un segmento orientado**, que se representa con una flecha. Está **determinado** por:
 
 -   **El módulo**: el módulo es el valor numérico, es decir, **lo que mide de largo**.
 
@@ -116,6 +116,24 @@ A esta ecuación la llamamos ***Ley de Hooke*** y fue enunciada por ***Robert Ho
 
 # 
 
+![](./pictures/Screen%20Shot%202017-06-01%20at%2012.46.01%20PM.png){fig-align="center" width="571"}
+
+![](./pictures/Untitled%201.png){fig-align="center" width="286"}
+
+# 
+
+Para medir fuerzas y saber el peso de cualquier objeto, se utiliza un **dinamómetro**.
+
+![](./pictures/dinamometro.png){fig-align="center" width="286"}
+
+# Muelles: Importante
+
+- Esta ecuación funciona **tanto para muelles que se estiran como aquellos que se contraen** (como el de la punta del boli). El único cambio es que, **la fuerza será negativa**(de signo contrario) porque **el muelle mide menos al aplicar la fuerza que antes**.
+
+- Los muelles **no se estiran hasta el infinito**. Hay un punto en el que **no regresan a su estado original**. Ese punto se llama **límite de elasticidad**, y si la fuerza sigue aumentando, **el muelle pierde su elasticidad**.
+
+# 
+
 <iframe src="https://phet.colorado.edu/sims/html/masses-and-springs/latest/masses-and-springs_en.html" width="800" height="600" allowfullscreen>
 
 </iframe>
@@ -166,7 +184,7 @@ Las **unidades de la velocidad**, en el **Sistema Internacional**, son los metro
 
 # Aceleración
 
-Normalmente, un móvil no se desplaza a velocidad constante. Por ello, definimos **velocidad instantánea** como la velocidad que lleva en un **instante muy pequeño** de tiempo y **velocidad media** a el desplazamiento del móvil entre el tiempo empleado:
+Normalmente, un móvil no se desplaza a velocidad constante. Por ello, definimos **velocidad instantánea** como la velocidad que lleva en un **instante muy pequeño** de tiempo y **velocidad media** al desplazamiento del móvil entre el tiempo empleado:
 
 $$
 v_{media} = \frac{x_{final} - x_{inicial}}{t} = \frac{x_f - x_0}{t} = \frac{x_f - x_i}{t}
